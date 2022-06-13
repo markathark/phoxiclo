@@ -1,0 +1,104 @@
+.container {
+  height: 10vh;
+  padding: 3vh 15%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(2) {
+  justify-content: flex-end;
+  color: white;
+}
+
+.cart:hover,
+.menuLogo:hover {
+  color: green;
+}
+
+.text {
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  font-family: "EB Garamond", serif;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 4rem;
+  font-family: "EB Garamond", serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  transition: 1s;
+}
+
+.menu li:first-child {
+  font-size: 2rem;
+  align-self: flex-end;
+  margin: 10vh 10vw 10vh 0;
+}
+.menu li {
+  cursor: pointer;
+  transition: 1s;
+  margin: 0 0 10px 0;
+}
+
+.menu li:hover {
+  color: green;
+  transition: 1s;
+}
+
+.menuLogo {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 3vh 10%;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3vh 5%;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  .menu {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}

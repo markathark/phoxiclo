@@ -1,0 +1,154 @@
+.wrapper {
+  height: auto;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.stickynav {
+  position: sticky;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  z-index: 30;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(243, 243, 243);
+  padding: 0 15%;
+  color: rgb(0, 0, 0);
+}
+
+.categories {
+  display: none;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navlist li {
+  padding-right: 30px;
+}
+
+.navlist li:hover {
+  color: green;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:hover {
+  color: green;
+}
+
+.navlistMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "EB Garamond", serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navlistMenu li {
+  margin: 5px 0;
+}
+
+.navlistMenu li:hover {
+  color: green;
+}
+
+.menutitle {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.menutitle:hover {
+  color: black;
+  font-weight: normal;
+}
+
+.about {
+  padding: 10vh 25% 10vh 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  background-color: rgb(241, 241, 241);
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 8vh;
+}
+
+.aboutDesc {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  margin-top: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: forestgreen;
+}
+
+@media (max-width: 1200px) {
+  .stickynav {
+    padding: 0 10%;
+  }
+  .about {
+    padding: 10vh 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navlist {
+    display: none;
+  }
+  .categories {
+    display: inline;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .stickynav {
+    padding: 0 5%;
+  }
+  .about {
+    padding: 10vh 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}

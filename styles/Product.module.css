@@ -1,0 +1,167 @@
+.container {
+  margin: 5vh 0;
+  height: 70vh;
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgContainer {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.price {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.title {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.desc {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  width: 70%;
+  text-align: center;
+}
+
+.choose {
+  margin: 20px 0 10px 0;
+}
+
+.sizes {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.activeSize {
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+  transition: 1s;
+  padding: 10px;
+}
+
+.otherSize {
+  background: none;
+  padding: 10px;
+  border: 1px solid gray;
+  transition: 1s;
+}
+
+.otherSize:hover {
+  background: rgb(229, 255, 226);
+}
+
+.ingredients {
+  display: flex;
+  justify-content: center;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addnotes {
+  border: 1px solid gray;
+  font-size: 1rem;
+  color: gray;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.quantity {
+  width: 50px;
+  height: 30px;
+}
+
+.button {
+  height: 30px;
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .imgContainer {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .container {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .imgContainer {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  .desc {
+    font-size: 1.3rem;
+  }
+}

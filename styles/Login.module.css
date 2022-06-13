@@ -1,0 +1,40 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "EB Garamond", serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.button {
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 1rem;
+  text-align: center;
+  color: red;
+}
